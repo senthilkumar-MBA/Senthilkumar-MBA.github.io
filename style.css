@@ -1,1 +1,428 @@
-body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;background:#f4f7fb}header{background:#0F172A;color:#fff;padding:20px;border-radius:8px}a{color:#0b5ed7}
+/* ===============================
+   Senthil Kumar Portfolio
+   Corporate Theme
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f9fc;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Navigation */
+
+header{
+
+    width:100%;
+
+    background:#0F172A;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 10%;
+
+    position:fixed;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD54F;
+
+}
+
+#mode{
+
+    border:none;
+
+    background:#FFD54F;
+
+    color:#000;
+
+    font-size:18px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    padding:8px 12px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:140px 10% 80px;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:52px;
+
+    color:#0F172A;
+
+}
+
+.hero-text h2{
+
+    color:#2563EB;
+
+    margin:15px 0;
+
+}
+
+.hero-text p{
+
+    margin:20px 0;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:320px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:#2563EB;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    margin-top:20px;
+
+}
+
+.btn:hover{
+
+    background:#0F172A;
+
+}
+
+/* Sections */
+
+section{
+
+    padding:80px 10%;
+
+}
+
+section h2{
+
+    font-size:36px;
+
+    color:#0F172A;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:#2563EB;
+
+    display:block;
+
+    margin-top:8px;
+
+}
+
+/* Cards */
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Skills */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:18px;
+
+}
+
+.grid span{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+/* Lists */
+
+ul{
+
+    margin-left:20px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* Contact */
+
+#contact p{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+#contact a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+}
+
+#contact a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* Dark Mode */
+
+.dark{
+
+    background:#0F172A;
+
+    color:white;
+
+}
+
+.dark header{
+
+    background:#000;
+
+}
+
+.dark .card{
+
+    background:#1E293B;
+
+    color:white;
+
+}
+
+.dark .grid span{
+
+    background:#1E293B;
+
+}
+
+.dark section h2{
+
+    color:white;
+
+}
+
+.dark .hero-text h1{
+
+    color:white;
+
+}
+
+.dark .hero-text p{
+
+    color:#ddd;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:240px;
+
+    height:240px;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+nav a{
+
+    margin:8px;
+
+}
+
+.hero-text h1{
+
+    font-size:38px;
+
+}
+
+}
