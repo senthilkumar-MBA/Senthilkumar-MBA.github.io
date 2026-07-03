@@ -227,7 +227,7 @@ a{ text-decoration:none; color:inherit; }
 .resume-box .btn-dark{ background: var(--gold); color: var(--navy-deep); }
 
 /* Contact */
-.contact-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px; }
+.contact-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(290px,1fr)); gap: 20px; }
 .contact-item{
   display:flex; align-items:center; gap:14px;
   background: var(--card-bg); border:1px solid var(--border);
@@ -240,7 +240,7 @@ a{ text-decoration:none; color:inherit; }
   background: var(--navy); color:#fff;
   display:flex; align-items:center; justify-content:center; font-size:0.95rem; flex-shrink:0;
 }
-.contact-value{ font-weight:600; font-size:0.92rem; word-break:break-word; }
+.contact-value{ font-weight:600; font-size:0.88rem; white-space: nowrap; }
 .contact-label{ color: var(--text-muted); font-size:0.78rem; }
 
 /* Footer */
@@ -285,4 +285,5 @@ a{ text-decoration:none; color:inherit; }
   .skills-grid{ grid-template-columns:1fr; }
   .resume-box{ flex-direction:column; text-align:center; }
   .photo-frame{ width:260px; height:300px; }
+  .contact-value{ white-space: normal; word-break: break-word; }
 }
